@@ -1,8 +1,10 @@
 coden
 lernen
-denken
-machen
+Denken
+Update Pycharm
+vereinfacheneinfach machen
 update windows
-update python
-vereinfachen
-Master Python
+debuggen
+fehler finden
+fehler suchen
+etwas
