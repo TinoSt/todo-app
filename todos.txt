@@ -4,7 +4,4 @@ Denken
 Update Pycharm
 vereinfacheneinfach machen
 update windows
-debuggen
 fehler finden
-fehler suchen
-etwas
