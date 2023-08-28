@@ -2,6 +2,6 @@ coden
 lernen
 Denken
 Update Pycharm
-vereinfacheneinfach machen
 update windows
 fehler finden
+debuggen
