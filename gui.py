@@ -2,6 +2,12 @@
 import functions
 import PySimpleGUI as Sg
 import time
+import os
+
+
+if not os.path.exists('todos.txt'):
+    with open('todos.txt', 'w') as file:
+        pass
 
 Sg.theme('DarkBlack')
 
@@ -10,7 +16,7 @@ label = Sg.Text('Füge ein todo hinzu')
 input_box = Sg.InputText(tooltip='Gib todo ein.', key='todo')
 add_button = Sg.Button('add')
 list_box = Sg.Listbox(values=functions.get_todos(), key='todos',
-                      enable_events=True, size=[45, 10])
+                      enable_events=True, size=[45, 12])
 
 edit_button = Sg.Button('edit')
 complete_button = Sg.Button('complete')
@@ -45,6 +51,7 @@ while True:
                 todos[index] = new_todo
                 functions.write_todos(todos)
                 window['todos'].update(values=todos)
+                window['todo'].update(value='')
             except IndexError:
                 Sg.popup('Please select an item first.', font=('Helvetica', 14))
         case 'complete':
